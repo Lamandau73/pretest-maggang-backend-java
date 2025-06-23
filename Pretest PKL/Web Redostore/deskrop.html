@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="hiasan.css">
+</head>
+<body>
+
+  <main class="product-detail-container">
+    <div class="left-column">
+      <img src="Untitled.jpg" alt="Product Image" class="product-image-large">
+      <div class="thumbs">
+        <img src="Untitled1.png" alt="thumb">
+        <img src="Untitled2.png" alt="thumb">
+      </div>
+    </div>
+
+    <div class="right-column">
+      <h2>Apple MacBook Pro 2023 14 inch M2 Pro 512GB</h2>
+      <p class="product-views">411 orang melihat barang ini</p>
+      <p class="product-price">Rp36.499.000</p>
+
+      <div class="variant-selector">
+        <label>Pilih Varian:</label>
+        <div class="variant-options">
+          <button class="variant active">Inter M2 Pro</button>
+          <button class="variant">Inter M2 Max</button>
+          <button class="variant">iBox M2 Pro</button>
+          <button class="variant">iBox M2 Max</button>
+        </div>
+      </div>
+
+      <div class="variant-selector">
+        <label>Pilih Ukuran:</label>
+        <div class="variant-options">
+          <button class="variant active">16/512GB Silver</button>
+          <button class="variant">16/512GB Grey</button>
+          <button class="variant">16/1TB Silver</button>
+          <button class="variant">32/1TB Grey</button>
+        </div>
+      </div>
+
+      <div class="buy-box">
+        <label>Jumlah:</label>
+        <div class="qty-control">
+          <button onclick="decrease()">−</button>
+          <span id="quantity">1</span>
+          <button onclick="increase()">+</button>
+        </div>
+        <p class="subtotal">Subtotal: <strong>Rp36.499.000</strong></p>
+        <button class="btn-green">+ Keranjang</button>
+        <button class="btn-buy">Beli Langsung</button>
+      </div>
+
+      <div class="tabs">
+        <h3>Detail Produk</h3>
+        <p><strong>Kondisi:</strong> Baru</p>
+        <p><strong>Berat:</strong> 3 kg</p>
+        <p><strong>Etalase:</strong> MacBook dan Aksesoris</p>
+        <ul>
+          <li>Garansi Inter = 1 Tahun Garansi Internasional</li>
+          <li>Garansi iBox = 1 Tahun Garansi Resmi iBox</li>
+          <li>Available Colors: Silver, Grey</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script src="tukanggalon.js"></script>
+</body>
+</html>

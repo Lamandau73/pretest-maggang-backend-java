@@ -1,0 +1,48 @@
+.transaction-page {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.info-alert {
+  background: #e0f7fa;
+  padding: 12px;
+  border-left: 4px solid #00bcd4;
+  margin-bottom: 20px;
+}
+
+.transaction-filter input,
+.transaction-filter select,
+.transaction-filter button {
+  margin: 6px;
+  padding: 8px 12px;
+}
+
+.status-filters {
+  margin-top: 10px;
+}
+
+.status-filters button.active {
+  background: #6a0dad;
+  color: white;
+  border-radius: 20px;
+}
+
+.transaction-card {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-info {
+  flex: 1;
+}
+
+.transaction-status {
+  color: green;
+  font-weight: bold;
+}

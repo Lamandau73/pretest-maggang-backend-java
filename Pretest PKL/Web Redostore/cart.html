@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keranjang</title>
+  <link rel="stylesheet" href="keranjang.css" />
+</head>
+<body>
+  <main class="cart-container">
+    <div class="cart-left" id="cart-items">
+      <h2>Keranjang</h2>
+      <label><input type="checkbox" id="select-all" checked /> Pilih Semua</label>
+
+      <div class="cart-item">
+        <input type="checkbox" class="item-checkbox" checked />
+        <img src="https://via.placeholder.com/80" alt="Gambar Produk" />
+        <div class="cart-details">
+          <div class="cart-title">MacBook Pro 2023 M2 Pro 16/512GB Silver</div>
+          <div class="cart-price" data-price="36499000">Rp36.499.000</div>
+          <a class="note-link">Tulis Catatan</a>
+
+          <div class="cart-actions">
+            <button class="btn-minus">-</button>
+            <span class="item-qty">1</span>
+            <button class="btn-plus">+</button>
+            <button class="cart-trash">
+              <img src="Untitled.jpg" width="20" alt="Hapus" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h3>Ringkasan belanja</h3>
+      <p>Total Harga (<span id="total-items">1</span> barang):</p>
+      <h2 id="total-price">Rp36.499.000</h2>
+      <button class="btn-buy">Beli (<span id="buy-count">1</span>)</button>
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redostore</title>
+  <link rel="stylesheet" href="ungu.css">
+</head>
+<body>
+  <header class="store-header">
+    <div class="store-info">
+      <h1>Redostore</h1>
+      <p class="status">🟢 Online • Kota Bandung</p>
+    </div>
+    
+    <div class="store-actions">
+      <button class="btn-follow">Follow</button>
+      <button onclick="location.href='chat.html'">Chat Penjual</button>
+
+      <div class="rating">⭐ 5.0 | ⏱ ± 3 jam | 🕛 Buka 24 jam</div>
+    </div>
+  </header>
+
+  <nav class="menu">
+  <a href="beranda.html" class="nav-item">Beranda</a>
+  <a href="deskrop.html" class="nav-item">Produk</a>
+  <a href="ulasan.html" class="nav-item">Ulasan</a>
+  </nav>
+
+  <main class="content">
+    <aside class="sidebar">
+      <h3>Etalase Toko</h3>
+      <ul>
+        <li>Semua Produk</li>
+        <li>Preorder</li>
+        <li>iPhone dan Aksesoris</li>
+        <li>iPad dan Aksesoris</li>
+        <li>MacBook dan Aksesoris</li>
+      </ul>
+    </aside>
+    <section class="product-list" id="product-list">
+    </section>
+  </main>
+
+  <script src="online.js"></script>
+<script>
+  fetch("http://localhost:8080/api/barang")
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      let list = document.getElementById("daftar-barang");
+      data.forEach(b => {
+        let item = document.createElement("li");
+        item.innerText = `${b.nama} - Rp${b.harga}`;
+        list.appendChild(item);
+      });
+    });
+</script>
+<ul id="daftar-barang"></ul>
+</body>
+</html>

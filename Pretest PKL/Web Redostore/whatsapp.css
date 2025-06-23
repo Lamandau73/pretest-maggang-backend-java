@@ -1,0 +1,74 @@
+.chat-page {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.chat-header {
+  background: purple;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background: #e5ddd5;
+}
+
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
+}
+
+#chatInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#sendBtn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.message {
+  margin-bottom: 10px;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  clear: both;
+}
+
+.from-user {
+  background: #dcf8c6;
+  float: right;
+  text-align: right;
+}
+
+.from-seller {
+  background: white;
+  float: left;
+}

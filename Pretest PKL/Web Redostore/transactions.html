@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Transaksi</title>
+  <link rel="stylesheet" href="transaksi.css" />
+</head>
+<body>
+
+<main class="transaction-page">
+  <div class="info-alert">
+    ℹ️ Keterlambatan pengiriman tujuan Kota Makassar & Bondowoso.
+    <a href="#">Info Selengkapnya</a>
+  </div>
+
+  <div class="transaction-filter">
+    <input type="text" placeholder="Cari transaksimu di sini">
+    <select>
+      <option>Semua Produk</option>
+    </select>
+    <input type="date">
+    <div class="status-filters">
+      <button class="active">Semua</button>
+      <button>Berlangsung</button>
+      <button>Berhasil</button>
+      <button>Tidak Berhasil</button>
+    </div>
+  </div>
+
+  <div id="transaction-list"></div>
+</main>
+
+<script src="transactions.js"></script>
+</body>
+</html>

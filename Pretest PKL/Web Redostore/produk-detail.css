@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f6ff;
+  padding: 40px;
+  margin: 0;
+}
+
+.product-detail {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(52, 26, 26, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.product-detail:hover {
+  transform: scale(1.01);
+}
+
+.product-detail h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-image {
+  max-width: 300px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 1.8em;
+  color: #8e44ad;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-beli {
+  background-color: #8e44ad;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-beli:hover {
+  background-color: #6c2d91;
+}
+
+.product-detail.homepod { border-left: 8px solid #6a00ff; }
+.product-detail.macbook { border-left: 8px solid #333; }
+.product-detail.macmini { border-left: 8px solid #009999; }
+.product-detail.ipad { border-left: 8px solid #ff0077; }
